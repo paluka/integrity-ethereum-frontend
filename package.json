@@ -1,0 +1,22 @@
+{
+  "name": "integrity-ethereum-frontend",
+  "version": "0.1.0",
+  "description": "Frontend of a web application that connects with the Ethereum network to verify the integrity of documents and files.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/paluka/integrity-ethereum-frontend.git"
+  },
+  "keywords": [
+    "Ethereum"
+  ],
+  "author": "Erik Paluka",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/paluka/integrity-ethereum-frontend/issues"
+  },
+  "homepage": "https://github.com/paluka/integrity-ethereum-frontend#readme"
+}
