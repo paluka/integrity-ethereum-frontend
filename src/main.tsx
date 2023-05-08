@@ -6,16 +6,16 @@ import App from "./App.tsx";
 import "./index.css";
 
 ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
-  <React.StrictMode>
-    <Auth0Provider
-      domain={import.meta.env.VITE_DOMAIN}
-      clientId={import.meta.env.VITE_CLIENT_ID}
-      authorizationParams={{
-        redirect_uri: window.location.origin,
-        audience: import.meta.env.VITE_AUDIENCE,
-      }}
-    >
-      <App />
-    </Auth0Provider>
-  </React.StrictMode>
+  // <React.StrictMode>
+  <Auth0Provider
+    domain={import.meta.env.VITE_DOMAIN}
+    clientId={import.meta.env.VITE_CLIENT_ID}
+    authorizationParams={{
+      redirect_uri: window.location.origin,
+      audience: import.meta.env.VITE_AUDIENCE,
+    }}
+  >
+    <App />
+  </Auth0Provider>
+  // </React.StrictMode>
 );

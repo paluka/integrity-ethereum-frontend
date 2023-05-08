@@ -1,5 +1,4 @@
 import { useAuth0 } from "@auth0/auth0-react";
-import viteLogo from "/vite.svg";
 import Loading from "./components/Loading";
 import Profile from "./components/Profile";
 import "./App.css";
@@ -23,30 +22,20 @@ function App() {
   ) : !isAuthenticated ? (
     <button onClick={() => loginWithRedirect()}>Sign In</button>
   ) : (
-    <>
-      <Profile user={user} />
-      <button
-        onClick={() =>
-          logout({
-            logoutParams: { returnTo: window.location.origin },
-          })
-        }
-      >
-        Log Out
-      </button>
-    </>
+    <Profile user={user} />
   );
 
   return (
-    <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-      </div>
+    <div
+      style={{
+        display: "flex",
+        flexDirection: "column",
+        justifyContent: "flex-start",
+      }}
+    >
       <h1>Integrity Using Ethereum</h1>
       <div className="card">{content}</div>
-    </>
+    </div>
   );
 }
 
